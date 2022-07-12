@@ -19,6 +19,7 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) =>{
+    console.log(req.body)
     places.push(req.body)
     res.redirect('/places')
 })
